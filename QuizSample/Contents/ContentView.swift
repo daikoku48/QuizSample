@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    // 再作成しない
+    @StateObject var viewModel = ContentViewModel()
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        MainView(viewModel: viewModel)
     }
 }
 
